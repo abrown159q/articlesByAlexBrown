@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles by Alex Brown</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add the favicon link -->
     <style>
         /* Reset some default styles */
         body, html {
@@ -39,7 +38,7 @@
             position: relative;
             width: 100%;
             height: 100vh;
-            /*overflow: hidden;*/
+            overflow: hidden;
         }
         /* Background image */
         .background-image {
@@ -67,7 +66,7 @@
         }
         /* Apply fade-in animation to the main content */
         .content-container {
-            animation: fade-in 3s ease-in-out;
+            animation: fade-in 1s ease-in-out;
         }
         /* Style for the white containers around links */
         a {
@@ -83,7 +82,7 @@
         <div class="background-image"></div>
         <div class="content-container">
             <div class="h1-container">
-                <h1>Articles by Alex Brown</h1>
+                <h1>Your H1 Heading</h1>
             </div>
             <div id="dynamic-content"></div>
         </div>
@@ -93,20 +92,22 @@
         // List of JSON objects with title, address, description, and link title
         const items = [
             {
-                title: 'Welcome!',
-                address: 'https://abrown159q.github.io/articlesByAlexBrown/',
-                description: 'This is the collection of published works by Alex Brown. Check back for updates!',
-                linkTitle: 'https://abrown159q.github.io/articlesByAlexBrown/',
+                title: 'Item 1',
+                address: 'https://www.example1.com',
+                description: 'This is the description for Item 1.',
+                linkTitle: 'Visit Website 1',
             },
-  {   title: 'A reasonable relationship', address: 'https://georgiabulletin.org/news/2022/03/a-reasonable-relationship/', description: 'My first article in a series about having a relationship with God.', linkTitle: ' March 31, 2022',},
-  {   title: 'Unveiling the beauty beneath our faults', address: 'https://georgiabulletin.org/news/2022/09/unveiling-the-beauty-beneath-our-faults/', description: 'My second article in the series about a relationship with God in the person of Jesus Christ.', linkTitle: ' September 30, 2022',},
-  {   title: 'We can walk with trustworthy guides', address: 'https://georgiabulletin.org/news/2022/12/we-can-walk-with-trustworthy-guides/', description: 'My third and final about having a relationship with God and why we can trust the Church.', linkTitle: ' December 9, 2022',},
-
             {
-                title: 'I hope you enjoy!',
-                address: 'https://abrown159q.github.io/prayerTimer/',
-                description: 'Try out this prayer timer',
-                linkTitle: 'PrayerTimer',
+                title: 'Item 2',
+                address: 'https://www.example2.com',
+                description: 'This is the description for Item 2.',
+                linkTitle: 'Visit Website 2',
+            },
+            {
+                title: 'Item 3',
+                address: 'https://www.example3.com',
+                description: 'This is the description for Item 3.',
+                linkTitle: 'Visit Website 3',
             }
         ];
 
