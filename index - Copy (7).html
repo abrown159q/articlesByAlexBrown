@@ -75,32 +75,29 @@
         <div class="background-image"></div>
         <div class="content-container">
             <div class="h1-container">
-                <h1>Your H1 Heading</h1>
+                <h1>Articles by Alex Brown</h1>
             </div>
             <div id="dynamic-content"></div>
         </div>
     </div>
 
     <script>
-        // List of JSON objects with title, address, description, and link title
+        // List of JSON objects with title, address, and description
         const items = [
             {
-                title: 'Item 1',
-                address: 'https://www.example1.com', // Change to your website URL
-                description: 'This is the description for Item 1.',
-                linkTitle: 'Visit Website 1',
+                title: 'A Reasonable Relationship',
+                address: 'https://georgiabulletin.org/news/2022/03/a-reasonable-relationship/',
+                description: 'This was my first in a series about having a relationship with God',
             },
             {
                 title: 'Item 2',
-                address: 'https://www.example2.com', // Change to your website URL
+                address: '456 Elm St',
                 description: 'This is the description for Item 2.',
-                linkTitle: 'Visit Website 2',
             },
             {
                 title: 'Item 3',
-                address: 'https://www.example3.com', // Change to your website URL
+                address: '789 Oak St',
                 description: 'This is the description for Item 3.',
-                linkTitle: 'Visit Website 3',
             }
         ];
 
@@ -116,15 +113,14 @@
                 const title = document.createElement('h2');
                 title.textContent = item.title;
 
-                const websiteLink = document.createElement('a');
-                websiteLink.href = item.address;
-                websiteLink.textContent = item.linkTitle; // Display link title
+                const address = document.createElement('p');
+                address.textContent = `Address: ${item.address}`;
 
                 const description = document.createElement('p');
                 description.textContent = item.description;
 
                 container.appendChild(title);
-                container.appendChild(websiteLink);
+                container.appendChild(address);
                 container.appendChild(description);
                 dynamicContent.appendChild(container);
             });
