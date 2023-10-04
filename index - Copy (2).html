@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Beautiful Website</title>
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Container styles for h1 */
+        .h1-container {
+            background: linear-gradient(to right, blue, green); /* Gradient text color */
+            padding: 20px;
+            color: white; /* Text color for h1 */
+            border-radius: 15px; /* Rounded edges */
+            text-align: center;
+        }
+        /* Container styles for h2 tags */
+        .h2-container {
+            background-color: blue; /* Customize the color */
+            padding: 20px;
+            color: white; /* Text color for h2 */
+        }
+        /* Container styles for h3 and paragraph tags */
+        .h3-p-container {
+            background-color: green; /* Customize the color */
+            padding: 20px;
+            color: white; /* Text color for h3 and paragraphs */
+        }
+        /* Main container for the entire content */
+        .main-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        /* Background image */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        /* Content container for text */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Animation for fade-in */
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        /* Apply fade-in animation to the main content */
+        .content-container {
+            animation: fade-in 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="background-image"></div>
+        <div class="content-container">
+            <div class="h1-container">
+                <h1>Your H1 Heading</h1>
+            </div>
+            <div class="h2-container">
+                <h2>Your H2 Heading</h2>
+            </div>
+            <div class="h3-p-container">
+                <h3>Your H3 Heading</h3>
+                <p>Your paragraph text goes here.</p>
+            </div>
+            <!-- Repeat the above h3-p-container for additional content sections -->
+        </div>
+    </div>
+</body>
+</html>
